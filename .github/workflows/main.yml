@@ -1,4 +1,4 @@
-name: '52Pojie Auto Sign'
+name: '52Pojie Auto Checkin'
 
 on:
   push:
