@@ -24,4 +24,4 @@ jobs:
       - name: '开始签到'
         env:
           POJIE: ${{ secrets.POJIE }}
-        run: python main.py
+        run: python 52Pojie.py
