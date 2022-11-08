@@ -22,12 +22,12 @@ def sign(cookie):
     if "您需要先登录才能继续本操作" in fc:
         result += "Cookie 失效"
     elif "恭喜" in fc:
-        result += "恭喜，签到成功！！！"
-    elif "你已经签过到了！" in fc:
-        result += "你已经签过到了！"
+        result += "签到成功"
+    elif "不是进行中的任务" in fc:
+        result += "今日已签到"
     else:
-        result += "签到失败！！！"
-    return result
+        result += "签到失败"
+    return result 
 
 def main():
     b = os.environ['POJIE']
@@ -37,6 +37,4 @@ def main():
 
 
 if __name__ == "__main__":
-    print('start')
     main()
-    print('end')
